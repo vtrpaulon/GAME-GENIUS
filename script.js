@@ -2,10 +2,7 @@ let order = [];
 let clickedOrder = [];
 let score = 0;
 
-//0-verde
-//1-vermelho
-//2-amarelo
-//3-azul
+//0-verde 1-vermelho 2-amarelo 3-azul
 
 const green = document.querySelector('.green');
 const red = document.querySelector('.red');
@@ -44,7 +41,7 @@ let checkOrder = () => {
         }
     }
     if(clickedOrder.length == order.length) {
-        alert('Pontuação: ${score} \n Voce acertou! Iniciando proximo nivel!');
+        alert('Parabéns! Voce acertou! \n\n Você tem ' + score + ' pontos. \n\n Iniciando proximo nivel!');
         nextLevel();
     }
 }
@@ -81,7 +78,7 @@ let nextLevel = () => {
 
 //função game-over
 let gameOver = () => {
-    alert('Pontuação: $score \n Game Over! Clique em OK para continuar...');
+    alert('Game Over! \n\n Voce conseguiu ' + score + ' pontos! \n\n Clique em OK para continuar...');
     order = [];
     clickedOrder = [];
 
@@ -90,7 +87,7 @@ let gameOver = () => {
 
 //funções de inicio do jogo
 let playGame = () =>{
-    alert('Bem vindo ao Game Genius');
+    alert('Bem vindo ao Game Genius! \n\n Tente memorizar a sequencia em que as cores vão piscar.');
     score = 0;
 
     nextLevel();

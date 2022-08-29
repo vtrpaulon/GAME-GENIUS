@@ -3,8 +3,8 @@ body{
     background-color: turquoise;
 }
 .main-game{
-    height: 100vh;
-    width: 100vw;
+    height: 80vh;
+    width: 80vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,8 +17,8 @@ body{
     border: 1px solid white;
     background-color: white;
     border-radius: 100%;
-    width: 700px;
-    height: 700px;
+    width: 500px;
+    height: 500px;
 }
 .green{
     grid-area: verde;
